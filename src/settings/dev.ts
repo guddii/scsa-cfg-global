@@ -24,7 +24,6 @@ export const dev = new System({
             href: new URL("http://localhost:4020/"),
             text: "iFrame"
         }),
-
         Compoxure: new Orchestrator({
             href: new URL("http://localhost:4030/"),
             text: "Compoxure"
