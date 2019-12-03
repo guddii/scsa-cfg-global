@@ -7,7 +7,7 @@ export const prod = new System({
             text: "Account"
         }),
         Catalogue: new Application({
-            href: new URL("https://scsa-app-account.herokuapp.com"),
+            href: new URL("https://scsa-app-catalogue.herokuapp.com"),
             text: "Catalogue"
         }),
         Checkout: new Application({
