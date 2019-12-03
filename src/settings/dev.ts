@@ -13,6 +13,10 @@ export const dev = new System({
         Checkout: new Application({
             url: new URL("http://localhost:3030/"),
             text: "Checkout"
+        }),
+        Sales: new Application({
+            url: new URL("http://localhost:3040/"),
+            text: "Sales"
         })
     },
     orchestrators: {
