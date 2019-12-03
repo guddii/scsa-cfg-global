@@ -23,6 +23,6 @@ export class Config {
     this.APPLICATIONS = ConfigByMode.applications;
     this.CURRENT = ConfigByMode.orchestrators[current];
     this.NODE_ENV = process.env.NODE_ENV || "development";
-    this.PORT = process.env.PORT || this.CURRENT.options.href.port;
+    this.PORT = process.env.PORT || this.CURRENT.options.url.port;
   }
 }

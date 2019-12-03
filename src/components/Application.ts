@@ -1,6 +1,6 @@
 export interface IApplicationOptions {
     text: string;
-    href?: URL;
+    url?: URL;
 }
 
 export class Application {
