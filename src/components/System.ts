@@ -1,15 +1,12 @@
-import { Application } from "./Application";
-import { Orchestrator } from "./Orchestrator";
-
-export interface ISCSAConfigurationOptions {
+export interface SystemOptions {
     applications: object;
     orchestrators: object;
 }
 
 export class System {
-    public readonly options: ISCSAConfigurationOptions;
+    public readonly options: SystemOptions;
 
-    constructor(options: ISCSAConfigurationOptions) {
+    constructor(options: SystemOptions) {
         this.options = options;
     }
 }

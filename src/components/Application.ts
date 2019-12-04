@@ -1,13 +1,13 @@
-export interface IApplicationOptions {
+export interface ApplicationOptions {
     text: string;
     url?: URL;
 }
 
 export class Application {
 
-    public readonly options: IApplicationOptions;
+    public readonly options: ApplicationOptions;
 
-    constructor(options: IApplicationOptions) {
+    constructor(options: ApplicationOptions) {
         this.options = options;
     }
 
