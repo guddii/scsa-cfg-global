@@ -1,6 +1,6 @@
 import { Application, Orchestrator, System } from "../components";
 
-export const dev = new System({
+export const development = new System({
     applications: {
         Account: new Application({
             url: new URL("http://localhost:3010/"),

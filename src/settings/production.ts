@@ -1,6 +1,6 @@
 import { Application, Orchestrator, System } from "../components";
 
-export const prod = new System({
+export const production = new System({
     applications: {
         Account: new Application({
             url: new URL("https://scsa-app-account.herokuapp.com"),

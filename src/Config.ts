@@ -2,7 +2,6 @@ import * as settings from "./settings";
 import { Application, Orchestrator } from "./components";
 
 export class Config {
-  public MODE: string;
   public CURRENT: Application;
   public PARENT: Orchestrator;
   public ORCHESTRATORS: any; // Map<String, Orchestrator>;
@@ -18,13 +17,15 @@ export class Config {
    * @param parent
    */
   constructor(current: string, from: string = "orchestrators", parent: string = "WebComponents") {
-    this.MODE = process.env.MODE || "dev";
-    const ConfigByMode: any = settings[this.MODE].options;
-    this.ORCHESTRATORS = ConfigByMode.orchestrators;
-    this.APPLICATIONS = ConfigByMode.applications;
-    this.CURRENT = ConfigByMode[from][current];
-    this.PARENT = ConfigByMode["orchestrators"][parent];
     this.NODE_ENV = process.env.NODE_ENV || "development";
-    this.PORT = process.env.PORT || this.CURRENT.options.url.port;
+
+    const scope: any = settings[this.NODE_ENV].options;
+    this.ORCHESTRATORS = scope.orchestrators;
+    this.APPLICATIONS = scope.applications;
+    this.CURRENT = scope[from][current];
+    this.PARENT = scope["orchestrators"][parent];
+
+    this.PORT = process.env.PORT || this.CURRENT.options.url.port || "4010";
+
   }
 }
