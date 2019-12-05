@@ -31,5 +31,9 @@ export class Config {
     return settings[this.SCSA_ENDPOINT_SETTINGS].options;
   }
 
+  endpoints() {
+    return { ...this.APPLICATIONS, ...this.ORCHESTRATORS}
+  }
+
 
 }
