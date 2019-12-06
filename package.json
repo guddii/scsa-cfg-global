@@ -10,6 +10,14 @@
     "type": "git",
     "url": "https://github.com:guddii/scsa-cfg-global.git"
   },
+  "engines": {
+    "node": ">=12.13.1",
+    "npm": ">=6.13.1"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
   "dependencies": {
     "@scsa/build": "https://github.com:guddii/scsa-cfg-build.git"
   },
