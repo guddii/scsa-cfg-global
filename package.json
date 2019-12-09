@@ -1,14 +1,20 @@
 {
-  "name": "@scsa/global",
   "private": false,
-  "version": "1.0.0",
+  "name": "@scsa/global",
   "description": "Global Configuration",
-  "main": "./index.ts",
   "license": "MIT",
   "author": "Florian Gudat <florian.gudat@guices.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com:guddii/scsa-cfg-global.git"
+  },
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "dependencies": {
+    "@scsa/build": "https://github.com:guddii/scsa-cfg-build.git"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5"
   },
   "engines": {
     "node": ">=12.13.1",
@@ -17,11 +23,5 @@
   "os": [
     "darwin",
     "linux"
-  ],
-  "dependencies": {
-    "@scsa/build": "https://github.com:guddii/scsa-cfg-build.git"
-  },
-  "devDependencies": {
-    "@types/node": "^12.7.5"
-  }
+  ]
 }
