@@ -4,8 +4,8 @@ import { Application, Orchestrator } from "./components";
 export class Config {
   public CURRENT: Application;
   public PARENT: Orchestrator;
-  public ORCHESTRATORS: any;
-  public APPLICATIONS: any;
+  public ORCHESTRATORS: Array<Orchestrator>;
+  public APPLICATIONS: Array<Application>;
   public NODE_ENV: string;
   public PORT: string;
   public SCSA_ENDPOINT_SETTINGS: string;
