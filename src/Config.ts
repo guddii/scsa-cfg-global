@@ -1,8 +1,8 @@
 import {
     Application,
-    ApplicationKeys,
+    Applications,
     Orchestrator,
-    OrchestratorKeys
+    Orchestrators
 } from "./components";
 import * as settings from "./settings";
 
@@ -10,8 +10,8 @@ export class Config {
     public KEY: any;
     public CURRENT: Application;
     public PARENT: Orchestrator;
-    public ORCHESTRATORS: Orchestrator[];
-    public APPLICATIONS: Application[];
+    public ORCHESTRATORS: Orchestrators;
+    public APPLICATIONS: Applications;
     public NODE_ENV: string;
     public PORT: string;
     public SCSA_ENDPOINT_SETTINGS: string;

@@ -20,8 +20,8 @@ export enum OrchestratorKeys {
     iFrame = "iFrame"
 }
 
-type Applications = Record<ApplicationKeys, Application>;
-type Orchestrators = Record<OrchestratorKeys, Orchestrator>;
+export type Applications = Record<ApplicationKeys, Application>;
+export type Orchestrators = Record<OrchestratorKeys, Orchestrator>;
 
 export interface ISystemOptions {
     applications: Applications;
