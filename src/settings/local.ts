@@ -28,10 +28,6 @@ export const local = new System({
             url: new URL("http://localhost:4020"),
             text: "iFrame"
         }),
-        Compoxure: new Orchestrator({
-            url: new URL("http://localhost:4030"),
-            text: "Compoxure"
-        }),
         Nodesi: new Orchestrator({
             url: new URL("http://localhost:4030"),
             text: "Nodesi"
