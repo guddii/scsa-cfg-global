@@ -31,6 +31,10 @@ export const heroku = new System({
         Compoxure: new Orchestrator({
             url: new URL("https://scsa-orc-compoxure.herokuapp.com"),
             text: "Compoxure"
+        }),
+        Nodesi: new Orchestrator({
+            url: new URL("https://scsa-orc-nodesi.herokuapp.com"),
+            text: "Nodesi"
         })
     }
 });

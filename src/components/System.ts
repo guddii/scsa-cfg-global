@@ -16,6 +16,7 @@ export enum ApplicationKeys {
  */
 export enum OrchestratorKeys {
     Compoxure = "Compoxure",
+    Nodesi = "Nodesi",
     WebComponents = "WebComponents",
     iFrame = "iFrame"
 }

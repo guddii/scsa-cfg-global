@@ -31,6 +31,10 @@ export const local = new System({
         Compoxure: new Orchestrator({
             url: new URL("http://localhost:4030"),
             text: "Compoxure"
+        }),
+        Nodesi: new Orchestrator({
+            url: new URL("http://localhost:4030"),
+            text: "Nodesi"
         })
     }
 });
